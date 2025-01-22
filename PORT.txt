@@ -1,0 +1,41 @@
+JE VEUX AJOUTER EN BAS DE PAGE , a coter d'image, UNE SORT DE SPEENER  vertical AVEC MES EXPERIENCE PROFESSIONNEL ET LES PARCOUR Expériences professionnelles,corige mon code
+
+ <div class="col-lg-6 content order-lg-1 order-4">
+          <p> je suis étudiante à l'Ecole Nationale d'Informatique (ENI) Fianarantsoa en ce moment. Après avoir obtenu ma licence, j'ai acquis de l'expérience en créant plusieurs sites web.</p>
+         <div class="spinner-container mt-4">
+            <div class="spinner">
+              <div class="spinner-item">
+                <h4>5. Stage de 3 mois au R&R development (2024)</h4>
+                <p>Conception et réalisation de la gestion de testament numerique et albums des souvenirs.</p> 
+              </div>
+              <div class="spinner-item">
+                <h4>4. Troisième année de licence à l’ENI (2023 - 2024)</h4>
+              </div>
+              <div class="spinner-item">
+                <h4>3. Stage de 3 mois au CPE (2023)</h4>
+                <p>Développement d'une application d'inscription en ligne et de paiement des frais de scolarité via l'API MVola.</p>
+              </div>
+              <div class="spinner-item">
+                <h4>2. Deuxième année de licence à l’ENI (2022 - 2023)</h4>
+              </div>
+              <div class="spinner-item">
+                <h4>1. Première année de licence à l’ENI (2021 - 2022)</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-3 background order-lg-2 custom-style" data-aos="zoom-in">
+          <img src="assets/img/SARY.png" class="img-fluid" alt="">
+          
+          <!-- Spinner Vertical -->
+         
+        </div>
+
+
+corige mon phrase je suis étudiante à l'Ecole Nationale d'Informatique (ENI) Fianarantsoa en ce moment.suivie le parcour geni logiciel et basse de donner ? VOICI MON FORMATION
+
+
+
+pas comme ca mais je veux une ligne verticale puis mes experience et parcour sont affiche lier avec cette ligne ; met le titre en couleur et lister le par 1 a5
+
