@@ -742,7 +742,7 @@ section {
 .custom-style img {
   display: block; /* Supprime les marges indésirables */
 margin-top: -636px;
-  margin-left: 687px; /* Centre l'image horizontalement */
+  margin-left: 600px; /* Centre l'image horizontalement */
   max-width: 100%; /* Limite la largeur à celle du conteneur parent */
   height: auto; /* Préserve les proportions de l'image */
 }
