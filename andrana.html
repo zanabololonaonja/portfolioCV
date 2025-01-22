@@ -1,79 +1,1034 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio onja</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>portfolio</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <!-- Favicons -->
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: NewBiz
+  * Template URL: https://bootstrapmade.com/newbiz-bootstrap-business-template/
+  * Updated: Mar 17 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
  
-    <style>
-    
-    </style>
-</head>
-<body>
-   
-    <div class="animation01">
-        <div class="rhombus_small">
-            <div class="rhombus">
-                <div class="border_box">
-                    <span class="line line01"></span>
-                    <span class="line line02"></span>
-                    <span class="line line03"></span>
-                    <span class="line line04"></span>
-                    <span class="circle circle01"></span>
-                    <span class="circle circle02"></span>
-                    <span class="circle circle03"></span>
-                    <span class="circle circle04"></span>
-                    <span class="animation_line animation_line01"></span>
-                    <span class="animation_line_wrapper animation_line02_wrapper"><span class="animation_line animation_line02"></span></span>
-                    <span class="animation_line animation_line03"></span>
-                    <span class="animation_line_wrapper animation_line04_wrapper"><span class="animation_line animation_line04"></span></span>
-                    <span class="animation_line animation_line05"></span>
-                    <span class="animation_line_wrapper animation_line06_wrapper"><span class="animation_line animation_line06"></span></span>
-                    <span class="animation_line animation_line07"></span>
-                    <span class="animation_line_wrapper animation_line08_wrapper"><span class="animation_line animation_line08"></span></span>
-                </div>
-                <div class="wave">
-                    <div class="wave_wrapper"><div class="wave_box"></div></div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="animation02">
-        <div class="rhombus_box">
-            <span class="rhombus_item_wrapper rhombus_item01_wrapper"><span class="rhombus_item"></span></span>
-            <span class="rhombus_item_wrapper rhombus_item02_wrapper"><span class="rhombus_item"></span></span>
-        </div>
-        <div class="double_content">
-            <div class="double_wrapper02 dotted02"><div class="dotted_hide"><div class="double_wrapper01 dotted01"><span class="dotted_right"></span></div></div></div>
-            <div class="double_wrapper02 white02"><div class="double_wrapper01 white01"></div></div>
-            <div class="double_wrapper02 gray02"><div class="double_wrapper01 gray01"></div></div>
-            <div class="double_wrapper02 orange02"><div class="double_wrapper01 orange01"></div></div>
-        </div>
-        <div class="name">
-   
-            <p1> Onja  </p1>
-            <p2>  Zanabololona </p2>
-            <p> RAZAFISAMBATRA</p> 
-            <!-- <span class="name_circle01"></span>
-            <span class="name_circle02"></span> -->
-        </div>
-    </div>
-
-
-    <script>
-        // Fonction pour vérifier si l'animation est terminée
-        function checkAnimations() {
-            // Vous pouvez personnaliser cette condition en fonction de vos animations
-            const animationDuration = 7000; // Durée en millisecondes après laquelle la redirection se produira
-            setTimeout(() => {
-                window.location.href = 'index.html'; // Redirige vers index.html après la durée spécifiée
-            }, animationDuration);
+  <style>
+     .anim {
+            overflow: hidden; /* Pour éviter que l'image déborde du conteneur */
+            display: inline-block; /* Pour que le conteneur s'ajuste à l'image */
+            max-width: 100%; /* Pour que l'image ne dépasse pas la largeur du conteneur */
+            float: right;
+            margin-top: -795px;
+            margin-left: 462px;
         }
 
-        // Appeler la fonction pour démarrer la vérification
-        checkAnimations();
-    </script>
+        .anim2 {
+            overflow: hidden; /* Pour éviter que l'image déborde du conteneur */
+            display: inline-block; /* Pour que le conteneur s'ajuste à l'image */
+            max-width: 100%; /* Pour que l'image ne dépasse pas la largeur du conteneur */
+           margin-left: 40px;
+            margin-top: -155px;
+           
+        }
+
+        .spark-element {
+  position: absolute;
+  width: 6px;
+  height: 7px;
+  border-radius: 50%;
+  background: #004a99;
+  pointer-events: none;
+  animation: animate 2s linear forwards;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(var(--x), var(--y));
+  }
+}
+
+
+
+
+#background-wrap {
+    bottom: 0;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: -1;
+}
+
+/* KEYFRAMES */
+
+@-webkit-keyframes animateBubble {
+    0% {
+        margin-top: 1000px;
+    }
+    100% {
+        margin-top: -100%;
+    }
+}
+
+@-moz-keyframes animateBubble {
+    0% {
+        margin-top: 1000px;
+    }
+    100% {
+        margin-top: -100%;
+    }
+}
+
+@keyframes animateBubble {
+    0% {
+        margin-top: 1000px;
+    }
+    100% {
+        margin-top: -100%;
+    }
+}
+
+@-webkit-keyframes sideWays { 
+    0% { 
+        margin-left:0px;
+    }
+    100% { 
+        margin-left:50px;
+    }
+}
+
+@-moz-keyframes sideWays { 
+    0% { 
+        margin-left:0px;
+    }
+    100% { 
+        margin-left:50px;
+    }
+}
+
+@keyframes sideWays { 
+    0% { 
+        margin-left:0px;
+    }
+    100% { 
+        margin-left:50px;
+    }
+}
+
+/* ANIMATIONS */
+
+.x1 {
+    -webkit-animation: animateBubble 25s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 25s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	animation: animateBubble 25s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	
+	left: -5%;
+	top: 5%;
+	
+	-webkit-transform: scale(0.6);
+	-moz-transform: scale(0.6);
+	transform: scale(0.6);
+}
+
+.x2 {
+    -webkit-animation: animateBubble 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	animation: animateBubble 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	
+	left: 5%;
+	top: 80%;
+	
+	-webkit-transform: scale(0.4);
+	-moz-transform: scale(0.4);
+	transform: scale(0.4);
+}
+
+.x3 {
+    -webkit-animation: animateBubble 28s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 28s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	animation: animateBubble 28s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	
+	left: 10%;
+	top: 40%;
+	
+	-webkit-transform: scale(0.7);
+	-moz-transform: scale(0.7);
+	transform: scale(0.7);
+}
+
+.x4 {
+    -webkit-animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+	animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+	
+	left: 20%;
+	top: 0;
+	
+	-webkit-transform: scale(0.3);
+	-moz-transform: scale(0.3);
+	transform: scale(0.3);
+}
+
+.x5 {
+    -webkit-animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	
+	left: 30%;
+	top: 50%;
+	
+	-webkit-transform: scale(0.5);
+	-moz-transform: scale(0.5);
+	transform: scale(0.5);
+}
+
+.x6 {
+    -webkit-animation: animateBubble 21s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 21s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	animation: animateBubble 21s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	
+	left: 50%;
+	top: 0;
+	
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	transform: scale(0.8);
+}
+
+.x7 {
+    -webkit-animation: animateBubble 20s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 20s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	animation: animateBubble 20s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	
+	left: 65%;
+	top: 70%;
+	
+	-webkit-transform: scale(0.4);
+	-moz-transform: scale(0.4);
+	transform: scale(0.4);
+}
+
+.x8 {
+    -webkit-animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+	animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+	
+	left: 80%;
+	top: 10%;
+	
+	-webkit-transform: scale(0.3);
+	-moz-transform: scale(0.3);
+	transform: scale(0.3);
+}
+
+.x9 {
+    -webkit-animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	
+	left: 90%;
+	top: 50%;
+	
+	-webkit-transform: scale(0.6);
+	-moz-transform: scale(0.6);
+	transform: scale(0.6);
+}
+
+.x10 {
+    -webkit-animation: animateBubble 26s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 26s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	animation: animateBubble 26s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	
+	left: 80%;
+	top: 80%;
+	
+	-webkit-transform: scale(0.3);
+	-moz-transform: scale(0.3);
+	transform: scale(0.3);
+}
+
+/* OBJECTS */
+
+.bubble {
+    -webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	
+    -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+	-moz-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+	box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+	
+    height: 200px;
+	position: absolute;
+	width: 200px;
+}
+
+.bubble:after {
+    background: -moz-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.5) 0%, rgba(255,255,255,0) 70%); /* FF3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(255,255,255,0.5)), color-stop(70%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 70%); /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 70%); /* Opera 12+ */
+    background: -ms-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 70%); /* IE10+ */
+    background: radial-gradient(ellipse at center,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 70%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	
+    -webkit-box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
+	-moz-box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
+	box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
+	
+	content: "";
+    height: 180px;
+	left: 10px;
+	position: absolute;
+	width: 180px;
+}
+
+    </style>
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex justify-content-between">
+
+      <div class="logo">
+        <!-- Uncomment below if you prefer to use an text logo -->
+        <!-- <h1><a href="index.html">NewBiz</a></h1> -->
+        <a href="index.html"><img src="assets/img/4.png" alt="" class="img-fluid"></a>
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Accueil</a></li>
+          <li><a class="nav-link scrollto" href="#about">Profil</a></li>
+          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-link scrollto" href="#testimonials">Compétences</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- #header -->
+
+  <!-- ======= Hero Section ======= -->
+
+  <section id="hero" class="clearfix">
+
+<!-- <div class="has-animation animation-ltr" data-delay="10">
+  <p class="bigger">Reveal Animation </p>
+</div> -->
+<!-- <div class="has-animation animation-ltr" data-delay="1500"> -->
+  <div class="hero-info" data-aos="zoom-in" data-aos-delay="10">
+
+    <p class="bjr">Bienvenue sur ma page portfolio ! je suis Onja, passionné par la création de solutions web innovantes.</p><br>
+    <h2>Développeur<span>Web</span> - Intégrateur</h2>
+  
+   
+      <!-- <div class="animated-text">
+        <span>B</span><span>o</span><span>n</span><span>j</span><span>o</span><span>u</span><span>r</span>
+    </div> -->
+    <div>
+      <a href="#about" class="btn-get-started scrollto">Plus d'info</a>
+      <a href="assets/img/cv.png"class="btn-services scrollto">Voir mon CV</a>
+      <!-- <a href="assets/img/cv.png" target="_blank" class="cv">Cliquez ici</a> -->
+    </div>
+  </div>
+
+</div>
+<!-- </div> -->
+
+<div class="has-animation animation-rtl" data-delay="1000">
+  <!-- <p class="text">Locing elit,s aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> -->
+</div>
+<!-- <div class="has-animation animation-rtl" data-delay="2000">
+  <img src="https://images.prismic.io/figaroimmo/943be1d1-6e3a-4c59-a5f1-97ce8b6ea147_lyon-confinement.jpg?auto=compress,format&rect=0,0,1000,667&w=720&h=480" width="600" />
+</div> -->
+
+<br>
+
+<div class="has-animation animation-ltr" data-delay="4000">
+  <!-- <p class="bigger">END ☺</p> -->
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('.has-animation').each(function(index) {
+            $(this).delay($(this).data('delay')).queue(function(){
+                $(this).addClass('animate-in');
+            });
+        });
+    });
+
+    document.addEventListener('mousemove', (e) => {
+    const ripple = document.createElement('div');
+    ripple.classList.add('ripple');
+    ripple.style.left = `${e.clientX}px`;
+    ripple.style.top = `${e.clientY}px`;
+    document.body.appendChild(ripple);
+
+    ripple.addEventListener('animationend', () => {
+        ripple.remove();
+    });
+});
+
+</script>
+    
+  </section><!-- End Hero Section -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about">
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h3>Faisons connaissance</h3><br>
+        </header>
+
+        <div class="row about-container">
+          <div id="background-wrap">
+            <div class="bubble x1"></div>
+            <div class="bubble x2"></div>
+            <div class="bubble x3"></div>
+            <div class="bubble x4"></div>
+            <div class="bubble x5"></div>
+            <div class="bubble x6"></div>
+            <div class="bubble x7"></div>
+            <div class="bubble x8"></div>
+            <div class="bubble x9"></div>
+            <div class="bubble x10"></div>
+        </div>
+
+        <div class="col-lg-6 content order-lg-1 order-4">
+          <p style="text-align: left;font-family:Arial, Helvetica, sans-serif;font-weight: 500;"> Je suis actuellement étudiante à l'École Nationale d'Informatique
+            de Fianarantsoa, où je suis le parcours Génie Logiciel et Bases de Données. Voici mon parcours de formation :</p>
+         <div class="spinner-container mt-4">
+          <div class="container mt-5">
+            <div class="row">
+              <!-- Ligne verticale et contenu -->
+              <div class="col-lg-9 mx-auto">
+                <div class="timeline">
+                  <!-- Expérience 1 -->
+                  <div class="timeline-item">
+                    <span class="timeline-number">1</span>
+                    <div class="timeline-content">
+                      <h4 class="timeline-title">Première année de licence à l’ENI (2021 - 2022)</h4>
+                     
+                      <p class="phrase"> j'ai créé de petits projets, et également pris part à des compétitions de développement."</P>
+                
+                     
+                    </div>
+                  </div>
+                  <!-- Expérience 2 -->
+                  <div class="timeline-item">
+                    <span class="timeline-number">2</span>
+                    <div class="timeline-content">
+                      <h4 class="timeline-title">Deuxième année de licence à l’ENI (2022 - 2023)</h4>
+                         </div>
+                  </div>
+                  <!-- Expérience 3 -->
+                  <div class="timeline-item">
+                    <span class="timeline-number">3</span>
+                    <div class="timeline-content">
+                      <h4 class="timeline-title">Stage de 3 mois au CPE (2023)</h4>
+                      <p class="phrase">Développement d'une application d'inscription en ligne et de paiement des frais de scolarité via l'API MVola.</p>
+                    </div>
+                  </div>
+                  <!-- Expérience 4 -->
+                  <div class="timeline-item">
+                    <span class="timeline-number">4</span>
+                    <div class="timeline-content">
+                      <h4 class="timeline-title">Troisième année de licence à l’ENI (2023 - 2024)</h4>
+                    </div>
+                  </div>
+                  <!-- Expérience 5 -->
+                  <div class="timeline-item">
+                    <span class="timeline-number">5</span>
+                    <div class="timeline-content">
+                      <h4 class="timeline-title">Stage de 3 mois au R&R development (2024)</h4>
+                      <p class="phrase">Conception et réalisation de la gestion de testament numérique et d’albums des souvenirs.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+             </div>
+        </div>
+        
+     
+        
+        <div class="col-lg-3 background order-lg-2 custom-style" data-aos="">
+          <img src="assets/img/CAP.png" class="img-fluid" alt="">
+          
+          <!-- Spinner Vertical -->
+         
+        </div>
+        
+  
+        </div>
+
+        <div class="anim">
+          <img src="assets/img/Animation - 1723205109896.gif" class="img-fluid" alt="">
+           </div>
+           <div class="anim2">
+            <img src="assets/img/Animation - 1723204745256.gif" class="img-fluid" alt="">
+             </div>
+           <!-- <div class="anim">
+            <img src="assets/img/Animation - 1723204745256.gif" class="img-fluid" alt="">
+             </div> -->
+      </div>
+      <script>
+     function spark(event) {
+  let sparkElement = document.createElement("div");
+  sparkElement.classList.add("spark-element");
+  
+  // Set the position of the element based on the mouse event
+  sparkElement.style.left = event.pageX + "px";
+  sparkElement.style.top = event.pageY + "px";
+
+  // Randomly scale the element
+  sparkElement.style.transform = `scale(${Math.random() * 2 + 1})`;
+
+  // Set random transition values
+  sparkElement.style.setProperty("--x", getRandomTransitionValue());
+  sparkElement.style.setProperty("--y", getRandomTransitionValue());
+  document.body.appendChild(sparkElement);
+
+  // Remove the element after 2 seconds
+  setTimeout(() => {
+    document.body.removeChild(sparkElement);
+  }, 2000);
+}
+
+function getRandomTransitionValue() {
+  // Generate a random value between -200 and 200 pixels
+  return `${Math.random() * 400 - 200}px`;
+}
+
+// Add event listener to track mouse movements and create spark effect
+document.addEventListener("mousemove", spark);
+
+
+      </script>
+    </section><!-- End About Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h3>A votre service !</h3>
+          <p>Ce que je sais faire.</p>
+        </header>
+
+        <div class="row justify-content-center">
+
+          <div class="col-md-6 col-lg-5" data-aos="zoom-in" data-aos-delay="100">
+            <div class="box">
+              <div class="icon"><i class="bi bi-palette" style="color: #ff689b;"></i></div>
+              <h4 class="title"><a href="">Graphisme</a></h4>
+              <p class="description">Création d’identité graphique, logos, chartes graphiques, visuels et documents. Typographie, dessin vectoriel, retouche photo.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-5" data-aos="zoom-in" data-aos-delay="200">
+            <div class="box">
+              <div class="icon"><i class="bi bi-card-checklist" style="color: #e9bf06;"></i></div>
+              <h4 class="title"><a href="">Webdesign</a></h4>
+              <p class="description">
+                Création de thèmes graphiques et d’interfaces web. Responsive design. Ergonomie. Développement front-end selon les standards W3C.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-5" data-aos="zoom-in" data-aos-delay="100">
+            <div class="box">
+              <div class="icon"><i class="bi bi-briefcase" style="color: #3fcdc7;"></i></div>
+              <h4 class="title"><a href="">  Gestion de projets</a></h4>
+              <p class="description">
+              
+                Coordination des étapes de réalisation de l’analyse des besoins à la mise en ligne. Gestion des resources externes. Choix de technologies adaptées.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-5" data-aos="zoom-in" data-aos-delay="200">
+            <div class="box">
+              <div class="icon"><i class="bi bi-code-slash" style="color:#41cf2e;"></i></div>
+              <h4 class="title"><a href=""> Développement</a></h4>
+              <p class="description">
+               
+                Développement sur mesure. Création ou refonte de site. Systèmes de gestion de contenu (CMS) Drupal et WordPress. Technologies open-source.</p>
+            </div>
+          </div>
+
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us">
+      <div class="container" data-aos="fade-up">
+        <header class="section-header">
+          <h3>Consulter mon curriculum vitae</h3>
+          <a href="assets/img/cv.png" target="_blank" class="cv">Cliquez ici</a>
+      </header>
+      
+        <div class="row row-eq-height justify-content-center">
+
+        </div>
+
+        <div class="row counters" data-aos="fade-up" data-aos-delay="100">
+
+
+        </div>
+
+      </div>
+    </section><!-- End Why Us Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="clearfix">
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h3 class="section-title"> Portfolio</h3>
+        </header>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12">
+            <div id="background-wrap">
+              <div class="bubble x1"></div>
+              <div class="bubble x2"></div>
+              <div class="bubble x3"></div>
+              <div class="bubble x4"></div>
+              <div class="bubble x5"></div>
+              <div class="bubble x6"></div>
+              <div class="bubble x7"></div>
+              <div class="bubble x8"></div>
+              <div class="bubble x9"></div>
+              <div class="bubble x10"></div>
+          </div>
+            <ul id="portfolio-flters">
+
+              <!-- <li data-filter="*" class="filter-active">All</li> -->
+              <li data-filter=".filter-app">petit Projet</li>
+              <li data-filter=".filter-card">competition</li>
+              <li data-filter=".filter-web">Stage</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a>Gestion de bibliotheque </a></h4>
+                <p>JSP</p>
+                <div>
+                  <a href="assets/img/portfolio/1.jpeg" title=" 1" class="portfolio-lightbox link-preview"><i class="bi bi-plus"></i></a>
+                   </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+
+              <div class="portfolio-wrap">
+                <img src="assets/img/portfolio/cpe1.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4><a >application d'inscription en ligne 
+                  </a></h4>
+               
+                
+                  <p>React - Express</p>
+                  <div>
+                    <a href="assets/img/portfolio/2.jpg" class="portfolio-lightbox link-preview" data-gallery="portfolioGallery" title="App 2"><i class="bi bi-plus"></i></a>
+                   </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/BeFunky-design (4).jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a >Gestion d'une banque</a></h4>
+                <p style="font-weight: bold;">React - Express</p>  
+                <div>
+                  <a href="assets/img/portfolio/3.jpg" class="portfolio-lightbox link-preview" data-gallery="portfolioGallery" title="Web 3"><i class="bi bi-plus"></i></a>
+                  </div>
+              </div>
+           
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/a.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="portfolio-details.html">devhunt</a></h4>
+                <p>react-Tailwind</p>
+                <div>
+                  <a href="assets/img/portfolio/BeFunky-design (4).jpg" class="portfolio-lightbox link-preview" data-gallery="portfolioGallery" title="Card 2"><i class="bi bi-plus"></i></a>
+                   </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/testament2.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="portfolio-details.html">la gestion de testament Numerique</a></h4>
+                <p>Next - Express</p>
+                <div>
+                  <a href="assets/img/portfolio/a.png" class="portfolio-lightbox link-preview" data-gallery="portfolioGallery" title="Web 2"><i class="bi bi-plus"></i></a>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/ihm.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a>Gestion d'une banque</a></h4>
+                <p>React - Express</p>
+                <div>
+                  <a href="assets/img/portfolio/b.png" class="portfolio-lightbox link-preview" data-gallery="portfolioGallery" title="App 3"><i class="bi bi-plus"></i></a>
+                 </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/b.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a >devhunt</a></h4>
+                <p>react</p>
+                <div>
+                  <a href="assets/img/portfolio/5.jpg" class="portfolio-lightbox link-preview" data-gallery="portfolioGallery" title="Card 1"><i class="bi bi-plus"></i></a>
+                   </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/c.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="portfolio-details.html">Card 3</a></h4>
+                <p>Card</p>
+                <div>
+                  <a href="assets/img/portfolio/5.jpg" class="portfolio-lightbox link-preview" data-gallery="portfolioGallery" title="Card 3"><i class="bi bi-plus"></i></a>
+                  <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/testament3.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="portfolio-details.html">la gestion de testament Numerique </a></h4>
+                <p>Next - Express</p>
+                <div>
+                  <a href="assets/img/portfolio/testament2.png" class="portfolio-lightbox link-preview" data-gallery="portfolioGallery" title="Web 1"><i class="bi bi-plus"></i></a>
+                  <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+
+
+    
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="section-bg">
+      <div class="container" data-aso="zoom-in">
+
+        <header class="section-header">
+          <h3>Compétences</h3>
+        </header>
+        <div class="weird-container">
+          <div class="weird-column">
+            <h4 class="Odd-backend">Back-end</h4>
+            <div class="strange-tech">
+              <div class="odd-progress-container">
+                <label for="file1">PHP</label>
+                <div class="odd-progress">
+                  <div class="odd-progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="65" aria-valuemax="10">60%</div>
+                </div>
+              </div>
+              <div class="odd-progress-container">
+                <label for="file2">SQL</label>
+                <div class="odd-progress">
+                  <div class="odd-progress-bar" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">65%</div>
+                </div>
+              </div>
+              <div class="odd-progress-container">
+                <label for="file3">Express</label>
+                <div class="odd-progress">
+                  <div class="odd-progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                </div>
+              </div>
+              <div class="odd-progress-container">
+                <label for="file4">NodeJs</label>
+                <div class="odd-progress">
+                  <div class="odd-progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+                </div>
+              </div>
+              <div class="odd-progress-container">
+                <label for="file4">Nest.js</label>
+                <div class="odd-progress">
+                  <div class="odd-progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <div class="weird-column">
+            <h4 class="Odd-frontend">Front-end</h4>
+            <div class="strange-tech">
+              <div class="odd-progress-container">
+                <label for="file5">HTML</label>
+                <div class="odd-progress">
+                  <div class="odd-progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">95%</div>
+                </div>
+              </div>
+              <div class="odd-progress-container">
+                <label for="file6">CSS</label>
+                <div class="odd-progress">
+                  <div class="odd-progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">90%</div>
+                </div>
+              </div>
+              <div class="odd-progress-container">
+                <label for="file7">JavaScript</label>
+                <div class="odd-progress">
+                  <div class="odd-progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">85%</div>
+                </div>
+              </div>
+              <div class="odd-progress-container">
+                <label for="file8">React</label>
+                <div class="odd-progress">
+                  <div class="odd-progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">80%</div>
+                </div>
+              </div>
+              <div class="odd-progress-container">
+                <label for="file8">Next</label>
+                <div class="odd-progress">
+                  <div class="odd-progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= Team Section ======= -->
+
+  
+    <!-- ======= Contact Section ======= -->
+    <!-- <section id="contact">
+      <div class="container-fluid" data-aos="fade-up">
+
+        <div class="contact-container">
+          <h2>Contact </h2>
+          <form id="contactForm">
+              <div class="form-group">
+                  <label for="name">Votre nom *</label>
+                  <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                  <label for="email">Votre email *</label>
+                  <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                  <label for="subject">Objet :</label>
+                  <input type="text" id="subject" name="subject" required>
+              </div>
+              <div class="form-group">
+                  <label for="message">Message :</label>
+                  <textarea id="message" name="message" required></textarea>
+              </div><BR></BR>
+              <button type="submit">Envoyer</button>
+          </form>
+      </div>
+   
+      
+
+
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+      <script type="text/javascript">
+          (function() {
+              emailjs.init("Etba5J10R84bbHQR2"); // Remplacez par votre clé publique EmailJS
+              console.log('EmailJS initialized');
+          })();
+      </script>
+      <script type="text/javascript">
+          document.getElementById('contactForm').addEventListener('submit', function(event) {
+              event.preventDefault();
+              console.log('Form submit event triggered');
+      
+              const serviceID = 'service_k58if4k'; // Remplacez par votre identifiant de service
+              const templateID = 'template_0trv6km'; // Remplacez par votre identifiant de modèle
+      
+              const templateParams = {
+                  name: document.getElementById('name').value,
+                  email: document.getElementById('email').value,
+                  subject: document.getElementById('subject').value,
+                  message: document.getElementById('message').value,
+                  to_email: 'zanabololonaonja@gmail.com'
+              };
+      
+              console.log('Sending email with params:', templateParams);
+      
+              emailjs.send(serviceID, templateID, templateParams)
+                  .then(() => {
+                      console.log('Email sent successfully');
+                      alert('Email envoyé avec succès!');
+                  }, (err) => {
+                      console.log('Error sending email:', err);
+                      alert(`Erreur lors de l'envoi de l'email: ${JSON.stringify(err)}`);
+                  });
+          });
+      </script>
+      </div> -->
+    <!-- </section> -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Plan du site</h4>
+            <ul style="text-align: left;margin-left: 42px;">
+              <li><a href="#">Accueil</a></li>
+              <li><a href="#">Profil</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Portfolio</a></li>
+              <li><a href="#">Compétences</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-info">
+            <h3>Onja</h3>
+            <p>Un projet, une question ou simplement envie d'échanger autour d'un café ? Envoyez-moi un message.</p>
+          </div>
+
+       
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>Contact </h4>
+            <p style="text-align: left;margin-left: 39px;font-family: Arial, Helvetica, sans-serif;font-size: 16px;">
+              <i class="bi bi-geo-alt"></i> - Tambohobe Fianarantsoa<br>
+              <i class="bi bi-telephone"></i> - 0348156073<br>
+              <i class="bi bi-envelope"></i> - zanabololonaonja@gmail.com<br>
+              <i class="bi bi-facebook"></i> - Razafisambatra Onja<br>
+          </p>
+          
+
+      
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-newsletter">
+            <h4>Réseaux sociaux</h4>
+            <div class="social-links">
+            
+              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+
+              <a href="https://mail.google.com/mail/u/0/#inbox" class="email"><i class="bi bi-envelope"></i></a>
+
+              <a href="https://www.linkedin.com/in/razafisambatra-zanabololona-onja-24b252344/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>Onja </strong> Zanabololona RAZAFISAMBATRA
+      </div>
+    
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
 
 </body>
+
 </html>
+
+
+
+
