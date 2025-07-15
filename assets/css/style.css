@@ -836,7 +836,7 @@ margin-top: -636px;
 /* Conteneur principal de la timeline */
 .timeline {
   position: relative;
-  height: 470px;
+  height: 689px;
   padding-left: 30px;
   margin-top: -70px;
   border-left: 4px solid #007bff; /* Ligne verticale */
@@ -1245,6 +1245,71 @@ margin-top: -636px;
 .weird-container {
   display: flex;
   justify-content: space-around;
+
+}
+.weird-column1 {
+  padding-top: 24px;
+  background-color: #529cfc2c; /* Bleu nuit */
+  cursor: pointer;
+  height: 344px;
+  border: 2px solid transparent;
+  border-bottom: 2px solid #007bff;
+  border-left: 2px solid #007bff;
+  border-right: 2px solid #007bff;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 20px;
+  width: 270px;
+}
+
+.weird-column1:hover {
+  border-bottom-color: #2826bd;
+  border-left-color:#1612df;
+  border-right-color: #1612df;
+  box-shadow: 0 0 10px #1612df;
+}
+
+.weird-column2 {
+  padding-top: 24px;
+  background-color: #529cfc2c; /* Bleu nuit */
+  cursor: pointer;
+  height: 404px;
+  border: 2px solid transparent;
+  border-bottom: 2px solid #007bff;
+  border-left: 2px solid #007bff;
+  border-right: 2px solid #007bff;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 20px;
+  width: 270px;
+}
+
+.weird-column2:hover {
+  border-bottom-color: #2826bd;
+  border-left-color:#1612df;
+  border-right-color: #1612df;
+  box-shadow: 0 0 10px #1612df;
+}
+
+.weird-column3 {
+  padding-top: 24px;
+  background-color: #529cfc2c; /* Bleu nuit */
+  cursor: pointer;
+  height: 504px;
+  border: 2px solid transparent;
+  border-bottom: 2px solid #007bff;
+  border-left: 2px solid #007bff;
+  border-right: 2px solid #007bff;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 20px;
+  width: 270px;
+margin-top: -18899px;
+  margin-left:869px;
+}
+
+.weird-column2:hover {
+  border-bottom-color: #2826bd;
+  border-left-color:#1612df;
+  border-right-color: #1612df;
+  box-shadow: 0 0 10px #1612df;
 }
 
 .Odd-backend,
@@ -1253,7 +1318,7 @@ margin-top: -636px;
   margin-bottom: 20px;
   font-weight: 600; /* Très épais */
   font-family: "Montserrat", sans-serif;
-  margin-left: 100px;
+  margin-left: -44px;
 }
 
 .strange-tech {
@@ -1267,27 +1332,37 @@ margin-top: -636px;
 
 label {
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: -60px;
   color: #003166;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: 900; /* Très épais */
+  text-align: left;
+  margin-left: 18px;
+  
 }
 
 .odd-progress {
-  width: 400px; /* Ajustez cette largeur selon vos besoins */
-  background-color: #e0e0e0;
+  width: 220px; /* Ajustez cette largeur selon vos besoins */
+  background-color: transparent;
   border-radius: 5px;
   overflow: hidden;
+    height: 1px;
+ 
 }
 
+.odd-progress-container{
+  margin-top: -666px;
+}
 .odd-progress-bar {
-  height: 20px; /* Ajustez cette hauteur selon vos besoins */
+  height: 10px; /* Ajustez cette hauteur selon vos besoins */
   background-color: #003166;
-  text-align: center;
+  text-align: top;
   color: white;
+  font-size: 11px;
   line-height: 20px; /* Alignement vertical du texte */
   border-radius: 5px 0 0 5px;
+  margin-top: -99px;
 }
 
 #testimonials {

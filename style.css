@@ -678,6 +678,67 @@ gray circle
         background: #808184;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+ .section-portfolio {
+      max-width: 1200px;
+      margin: 50px auto;
+      padding: 20px;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .projet-card {
+      background-color: #1e293b;
+      border-radius: 12px;
+      width: 100%;
+      max-width: 500px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.3s ease;
+    }
+
+    .projet-card:hover {
+      transform: scale(1.02);
+    }
+
+    .projet-titre {
+      font-size: 1.5rem;
+      margin: 20px;
+      color: #ffffff;
+    }
+
+    .projet-image {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .projet-description {
+      font-size: 1rem;
+      padding: 20px;
+      color: #cbd5e1;
+    }
+
+    @media (max-width: 768px) {
+      .section-portfolio {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
 /*============
 orange circle
 ============*/
