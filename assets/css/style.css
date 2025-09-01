@@ -937,7 +937,9 @@ margin-top: -636px;
   line-height: 24px;
   margin-bottom: 0;
 }
-
+.description{
+  color: black;
+}
 #why-us {
   padding: 60px 0;
   background: #004a99;
