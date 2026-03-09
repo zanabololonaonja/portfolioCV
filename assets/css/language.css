@@ -1,0 +1,23 @@
+.language {
+  margin: 16px 0 0 0;
+  display: flex;
+  gap: 14px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.language span {
+  background: #e9f2fb;
+  color: #1976d2;
+  border-radius: 20px;
+  padding: 8px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  box-shadow: 0 1px 4px rgba(25,118,210,0.08);
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  margin-bottom: 6px;
+}
+.language span:hover {
+  background: #d0e7fa;
+  color: #0d47a1;
+}
